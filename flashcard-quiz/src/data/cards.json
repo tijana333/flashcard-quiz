@@ -3,5 +3,23 @@
     "id": 1,
     "question": "What is a React Hook?",
     "answer": "A function that lets you use state and lifecycle features in functional components."
+  },
+
+  {
+    "id": 2,
+    "question": "What is key in React?",
+    "answer": "In React, a key is a special string attribute you must include when creating lists of elements"
+  },
+
+  {
+    "id": 3,
+    "question": "What is state in React?",
+    "answer": "Data that can change and affects what is rendered."
+  },
+
+  {
+    "id": 4,
+    "question": "What is a component?",
+    "answer": "A reusable piece of UI."
   }
 ]
