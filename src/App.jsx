@@ -1,5 +1,5 @@
 import Flashcard from "./components/Flashcard";
-import cards from "./cards";
+import cards from "./data/cards";
 function App() {
   return (
     <div>

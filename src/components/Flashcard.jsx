@@ -1,4 +1,5 @@
-const Flashcard = () => {
+const Flashcard = ({ cards }) => {
+  console.log(cards);
   return <div>Flashcard</div>;
 };
 
