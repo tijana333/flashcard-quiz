@@ -9,7 +9,9 @@ export default function Flashcard({ question, answer }) {
       <div className="card-inner" onClick={() => setFlipped((f) => !f)}>
         {/* FRONT */}
         <div className="card-face card-front">
-          <div className="card-eyebrow">Question</div>
+          <div cl assName="card-eyebrow">
+            Question
+          </div>
           <div className="card-text">{question}</div>
         </div>
 
