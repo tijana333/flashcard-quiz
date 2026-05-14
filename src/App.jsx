@@ -13,6 +13,10 @@ import Header from "./components/Header";
 function App() {
   return (
     <div id="app">
+      <Flashcard
+        question="What is React?"
+        answer="A JavaScript library for building UI."
+      />
       <Header />
     </div>
   );
