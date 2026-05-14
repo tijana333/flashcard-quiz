@@ -7,7 +7,11 @@ function App() {
   const [currentCard, setCurrentCard] = useState(0);
 
   function nextCard() {
-    setCurrentCard(currentCard + 1);
+    if (currentCard === cards.length - 1) {
+      setCurrentCard(0);
+    } else {
+      setCurrentCard(currentCard + 1);
+    }
   }
   return (
     <div onClick={nextCard}>
