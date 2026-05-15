@@ -1,10 +1,6 @@
-import { useState } from "react";
 import "./flashcard.css";
 
-export default function Flashcard({ question, answer }) {
-  const [flipped, setFlipped] = useState(false);
-  console.log(question, answer);
-
+export default function Flashcard({ question, answer, flipped, setFlipped }) {
   return (
     <div className={`card-wrap ${flipped ? "flipped" : ""}`}>
       <div className="card-inner" onClick={() => setFlipped((f) => !f)}>
