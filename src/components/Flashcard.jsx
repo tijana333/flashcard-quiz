@@ -3,6 +3,7 @@ import "./flashcard.css";
 
 export default function Flashcard({ question, answer }) {
   const [flipped, setFlipped] = useState(false);
+  console.log(question, answer);
 
   return (
     <div className={`card-wrap ${flipped ? "flipped" : ""}`}>

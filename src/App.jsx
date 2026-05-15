@@ -13,11 +13,11 @@ function App() {
       setCurrentCard(currentCard + 1);
     }
   }
-  return (
-    <div onClick={nextCard}>
-      <h1>{cards[currentCard].question}</h1>
-    </div>
-  );
+  return;
+  <Flashcard
+    question={cards[currentCard].question}
+    answer={cards[currentCard].answer}
+  />;
 }
 
 export default App;
