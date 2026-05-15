@@ -7,17 +7,17 @@ function App() {
   const [currentCard, setCurrentCard] = useState(0);
   const [flipped, setFlipped] = useState(false);
   function nextCard() {
-    if (currentCard === cards.length - 1) {
-      setCurrentCard(0);
-    } else {
+    if (currentCard !== cards.length - 1) {
       setCurrentCard(currentCard + 1);
     }
+    setFlipped(false);
   }
 
   function prevCard() {
     if (currentCard > 0) {
       setCurrentCard(currentCard - 1);
     }
+    setFlipped(false);
   }
   return (
     <div className="flash-card">
